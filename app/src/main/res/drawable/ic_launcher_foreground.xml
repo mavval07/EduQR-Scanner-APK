@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Sudut Viewfinder Hijau Emerald (Safe Zone 66x66 di tengah 21..87) -->
+    <path
+        android:strokeColor="#10B981"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M28,40 L28,28 L40,28" />
+    <path
+        android:strokeColor="#10B981"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M68,28 L80,28 L80,40" />
+    <path
+        android:strokeColor="#10B981"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M80,68 L80,80 L68,80" />
+    <path
+        android:strokeColor="#10B981"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M40,80 L28,80 L28,68" />
+
+    <!-- Blok QR Kiri Atas -->
+    <path
+        android:strokeColor="#F8FAFC"
+        android:strokeWidth="2.8"
+        android:pathData="M36,36 h14 v14 h-14 z" />
+    <path
+        android:fillColor="#F8FAFC"
+        android:pathData="M40.5,40.5 h5 v5 h-5 z" />
+
+    <!-- Blok QR Kanan Atas -->
+    <path
+        android:strokeColor="#F8FAFC"
+        android:strokeWidth="2.8"
+        android:pathData="M58,36 h14 v14 h-14 z" />
+    <path
+        android:fillColor="#F8FAFC"
+        android:pathData="M62.5,40.5 h5 v5 h-5 z" />
+
+    <!-- Blok QR Kiri Bawah -->
+    <path
+        android:strokeColor="#F8FAFC"
+        android:strokeWidth="2.8"
+        android:pathData="M36,58 h14 v14 h-14 z" />
+    <path
+        android:fillColor="#F8FAFC"
+        android:pathData="M40.5,62.5 h5 v5 h-5 z" />
+
+    <!-- Modul Data QR Kanan Bawah -->
+    <path
+        android:fillColor="#F8FAFC"
+        android:pathData="M58,58 h5.5 v5.5 h-5.5 z" />
+    <path
+        android:fillColor="#34D399"
+        android:pathData="M66.5,58 h5.5 v5.5 h-5.5 z" />
+    <path
+        android:fillColor="#34D399"
+        android:pathData="M58,66.5 h5.5 v5.5 h-5.5 z" />
+    <path
+        android:fillColor="#F8FAFC"
+        android:pathData="M66.5,66.5 h5.5 v5.5 h-5.5 z" />
+
+    <!-- Garis Laser Scan Tengah -->
+    <path
+        android:fillColor="#34D399"
+        android:pathData="M24,52.8 h60 v2.4 h-60 z" />
+</vector>

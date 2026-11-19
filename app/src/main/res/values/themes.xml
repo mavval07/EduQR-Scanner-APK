@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.EduQRScanner" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">#10B981</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#6366F1</item>
+        <item name="android:statusBarColor">#1E293B</item>
+        <item name="android:navigationBarColor">#1E293B</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

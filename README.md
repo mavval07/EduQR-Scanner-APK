@@ -1,12 +1,13 @@
-# EduQR Scanner APK — Aplikasi Android Scanner Khusus EduQR PC
+# EduQR Scanner APK — Aplikasi Android Scanner Khusus EduQR PC (v1.2)
 
 Aplikasi native Android (**Kotlin + CameraX + Google ML Kit**) untuk memindai kartu QR siswa secara cepat (100% *on-device* tanpa internet) dan mengirimkannya langsung ke **Server PC EduQR v9** melalui Wi-Fi / Hotspot lokal.
 
-## Fitur Utama
+## Fitur Lengkap (v1.2)
+- **Ganti Kamera Depan & Belakang**: Tombol cepat **`Kamera: Blk` / `Kamera: Dpn`** untuk beralih antara kamera belakang (scan genggam) dan kamera depan (mode meja / kios absensi mandiri siswa). Pilihan kamera tersimpan otomatis.
+- **Ikon Aplikasi Khusus (`EduQR Scanner`)**: Ikon peluncur (*launcher icon*) resolusi tinggi lengkap dengan dukungan *Adaptive Icon* Android 8+ untuk semua ukuran layar HP.
 - **Pairing 1-Detik via QR Code**: Arahkan kamera HP ke QR Pairing (`EDUQRPAIR|...`) di layar PC EduQR, maka alamat IP server, PIN 4-digit, daftar siswa, dan mata pelajaran langsung tersinkron otomatis.
-- **Mendukung HTTP (`8080`) & HTTPS Lokal (`8443`)**: Otomatis menerima sertifikat lokal PC EduQR tanpa peringatan browser.
-- **Mode Absensi Umum & Mata Pelajaran**: Pilih mode scan langsung dari HP beserta pilihan mata pelajaran aktif dari server PC.
-- **Antrean Offline Otomatis**: Jika sinyal Wi-Fi sempat terputus, hasil scan tersimpan aman di memori HP dan otomatis dikirim ulang ke PC saat Wi-Fi tersambung kembali.
+- **Viewfinder Jernih dengan Laser Animasi**: Kotak bidik transparan berbingkai sudut hijau emerald, dukungan *Tap-to-Focus*, *Zoom* (`1.0x` / `1.5x` / `2.0x`), dan *Flash*.
+- **Mode Absensi Umum & Mata Pelajaran + Antrean Offline**: Mendukung pemindaian absensi harian maupun per mata pelajaran, serta menyimpan antrean otomatis saat sinyal Wi-Fi terputus.
 
 ## Cara Build Menjadi File `.apk`
 
