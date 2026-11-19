@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0F172A">
+
+    <!-- Header & Status Koneksi -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="#1E293B">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="EduQR Scanner HP"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tvStatusBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum Terhubung"
+                android:textColor="#FDE68A"
+                android:background="#78350F"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Input IP Server & PIN -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/etServerUrl"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_weight="2"
+                android:hint="http://192.168.1.10:8080"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#94A3B8"
+                android:background="#334155"
+                android:paddingHorizontal="10dp"
+                android:textSize="12sp"
+                android:inputType="textUri"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/etPin"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_weight="0.8"
+                android:layout_marginStart="6dp"
+                android:hint="PIN"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#94A3B8"
+                android:background="#334155"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:maxLength="6"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/btnConnect"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginStart="6dp"
+                android:text="Hubungkan"
+                android:textSize="11sp"
+                android:backgroundTint="#10B981"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Pilihan Mode Absensi Umum / Mata Pelajaran -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/btnModeToggle"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:text="Mode: Umum"
+                android:textSize="11sp"
+                android:backgroundTint="#4F46E5"
+                android:textColor="#FFFFFF" />
+
+            <Spinner
+                android:id="@+id/spSubject"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:background="#334155"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnTorch"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginStart="6dp"
+                android:text="Flash"
+                android:textSize="11sp"
+                android:backgroundTint="#475569"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Area Kamera Live -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/previewView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_gravity="center"
+            android:background="@android:drawable/dialog_holo_light_frame" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="14dp"
+            android:background="#AA0F172A"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp"
+            android:text="Arahkan ke QR Pairing PC atau Kartu QR Siswa"
+            android:textColor="#E2E8F0"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+    <!-- Panel Hasil Scan & Antrean Offline -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp"
+        android:background="#1E293B">
+
+        <TextView
+            android:id="@+id/tvResultTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Siap Memindai Kartu QR"
+            android:textColor="#34D399"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvResultDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Scan QR Pairing di layar PC untuk koneksi otomatis 1 detik."
+            android:textColor="#CBD5E1"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tvQueueInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Antrean offline: 0"
+                android:textColor="#94A3B8"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/btnFlushQueue"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:text="Kirim Antrean"
+                android:textSize="11sp"
+                android:backgroundTint="#0284C7"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
