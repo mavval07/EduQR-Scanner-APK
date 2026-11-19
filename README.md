@@ -1,0 +1,1 @@
+# EduQR-Scanner-APK
